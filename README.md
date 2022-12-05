@@ -17,3 +17,4 @@ If you have any questions regarding a solution, feel more than free to email me 
 | Problem     | Solution |
 | ----------- | ----------- |
 | [Day 1 ](https://adventofcode.com/2022/day/1)     | [Solution](Day1/Calorie%20Counting.go)      |
+| [Day 2 ](https://adventofcode.com/2022/day/2)     | [Solution](Day2/RockPaperScissors.go)      |
