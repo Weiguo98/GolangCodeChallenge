@@ -12,6 +12,11 @@ If you have any questions regarding a solution, feel more than free to email me 
 | ----------- | ----------- |
 | [Moving Day  ](https://open.kattis.com/problems/movingday)     | [Solution](MovingDay/MovingDay.go)      |
 | [Not Amused](https://open.kattis.com/problems/notamused)   | [Solution](NotAmused/NotAmused.go)        |
+| [HtoO](https://open.kattis.com/problems/htoo)   | [Solution](HtoO/HtoO.go)        |
+| [Dog & Gopher](https://open.kattis.com/problems/doggopher)   | [Solution](Dog&Gopher/Dog%26Gopher.go)        |
+| [Hardwood Species](https://open.kattis.com/problems/hardwoodspecies)   | [Solution](HardwoodSpecies/HardwoodSpecies.go)        |
+| [Secret Chamber at Mount Rushmore](https://open.kattis.com/problems/secretchamber)   | [Solution](SecretChamber/SecretChamberatMountRushmore.go)        |
+| [Simple Addition](https://open.kattis.com/problems/simpleaddition)   | [Solution](SimpleAddition/SimpleAddition.go)        |
 
 ### Advent of Code 2022
 | Problem     | Solution |
