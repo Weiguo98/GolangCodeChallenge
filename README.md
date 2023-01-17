@@ -19,3 +19,13 @@ If you have any questions regarding a solution, feel more than free to email me 
 | [Day 1 ](https://adventofcode.com/2022/day/1)     | [Solution](Day1/Calorie%20Counting.go)      |
 | [Day 2 ](https://adventofcode.com/2022/day/2)     | [Solution](Day2/RockPaperScissors.go)      |
 | [Day 3 ](https://adventofcode.com/2022/day/3)     | [Solution](Day3/RucksackReorganization.go)      |
+| [Day 4 ](https://adventofcode.com/2022/day/4)     | [Solution](Day4/CampCleanup.go)      |
+
+
+
+
+
+
+
+
+
