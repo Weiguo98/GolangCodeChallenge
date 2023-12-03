@@ -31,4 +31,6 @@ If you have any questions regarding a solution, feel more than free to email me 
 | --------------------------------------------- | -------- |
 | [Day 1 ](https://adventofcode.com/2023/day/1) |          |
 | [Day 2 ](https://adventofcode.com/2023/day/2) |[Solution](AOC2023-Day2/Cube.go)|
+| [Day 1 ](https://adventofcode.com/2023/day/3) |          |
+
 
