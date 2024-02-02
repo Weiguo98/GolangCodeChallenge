@@ -27,10 +27,12 @@ If you have any questions regarding a solution, feel more than free to email me 
 
 ### Advent of Code 2023
 
-| Problem                                       | Solution |
-| --------------------------------------------- | -------- |
-| [Day 1 ](https://adventofcode.com/2023/day/1) |          |
-| [Day 2 ](https://adventofcode.com/2023/day/2) |[Solution](AOC2023-Day2/Cube.go)|
-| [Day 1 ](https://adventofcode.com/2023/day/3) |          |
-
-
+| Problem                                       | Solution                         |
+| --------------------------------------------- | -------------------------------- |
+| [Day 1 ](https://adventofcode.com/2023/day/1) | [Solution](AOC2023-Day1/Day1.go) |
+| [Day 2 ](https://adventofcode.com/2023/day/2) | [Solution](AOC2023-Day2/Cube.go) |
+| [Day 3 ](https://adventofcode.com/2023/day/3) | [Solution](AOC2023-Day3/Gear.go) |
+| [Day 4 ](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day4/day4.go) |
+| [Day 11 ](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day11/day11.go) |
+| [Day 13 ](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day13/day13.go) |
+| [Day 18 ](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day13/day18.go) |
