@@ -4,7 +4,7 @@ This repo contains solutions to all of the Kattis and AOC problems I have comple
 
 If you have any questions regarding a solution, feel more than free to email me at guow1227@gmail.com
 
-### Kattis
+## Kattis
 
 | Problem                                                                            | Solution                                                  |
 | ---------------------------------------------------------------------------------- | --------------------------------------------------------- |
@@ -15,6 +15,8 @@ If you have any questions regarding a solution, feel more than free to email me 
 | [Hardwood Species](https://open.kattis.com/problems/hardwoodspecies)               | [Solution](HardwoodSpecies/HardwoodSpecies.go)            |
 | [Secret Chamber at Mount Rushmore](https://open.kattis.com/problems/secretchamber) | [Solution](SecretChamber/SecretChamberatMountRushmore.go) |
 | [Simple Addition](https://open.kattis.com/problems/simpleaddition)                 | [Solution](SimpleAddition/SimpleAddition.go)              |
+
+## Advent of Code
 
 ### Advent of Code 2022
 
@@ -29,10 +31,20 @@ If you have any questions regarding a solution, feel more than free to email me 
 
 | Problem                                       | Solution                         |
 | --------------------------------------------- | -------------------------------- |
-| [Day 1 ](https://adventofcode.com/2023/day/1) | [Solution](AOC2023-Day1/Day1.go) |
-| [Day 2 ](https://adventofcode.com/2023/day/2) | [Solution](AOC2023-Day2/Cube.go) |
-| [Day 3 ](https://adventofcode.com/2023/day/3) | [Solution](AOC2023-Day3/Gear.go) |
-| [Day 4 ](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day4/day4.go) |
-| [Day 11 ](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day11/day11.go) |
-| [Day 13 ](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day13/day13.go) |
-| [Day 18 ](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day13/day18.go) |
+| [Day 1](https://adventofcode.com/2023/day/1) | [Solution](AOC2023-Day1/Day1.go) |
+| [Day 2](https://adventofcode.com/2023/day/2) | [Solution](AOC2023-Day2/Cube.go) |
+| [Day 3](https://adventofcode.com/2023/day/3) | [Solution](AOC2023-Day3/Gear.go) |
+| [Day 4](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day4/day4.go) |
+| [Day 11](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day11/day11.go) |
+| [Day 13](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day13/day13.go) |
+| [Day 18](https://adventofcode.com/2023/day/3) | [Solution](aoc2023/day13/day18.go) |
+
+### Advent of Code 2024
+
+| Problem                                       | Solution                         |
+| --------------------------------------------- | -------------------------------- |
+| [Day 1](https://adventofcode.com/2024/day/1) | [Solution](aoc2024/day1/day1.go) |
+
+## How to run
+
+Stay in the root directory, import the day in the `main.go` you would like to test, then run with `go run main.go`.
