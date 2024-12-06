@@ -2,11 +2,54 @@ package aoc2024
 
 import (
 	utils "adventOfCode/aoc2024/utils"
+	_"fmt"
 	"log"
-	"math"
 	"os"
 	"strings"
 )
+
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
+}
+
+func isSafe(levels []int) bool {
+	if len(levels) < 2 {
+		return true
+	}
+
+	isIncreasing := true
+	isDecreasing := true
+
+	for i := 1; i < len(levels); i++ {
+		diff := levels[i] - levels[i-1]
+		absDiff := abs(diff)
+		if absDiff < 1 || absDiff > 3 {
+			return false
+		}
+		if diff > 0 {
+			isDecreasing = false
+		} else if diff < 0 {
+			isIncreasing = false
+		}
+	}
+
+	return isIncreasing || isDecreasing
+}
+
+//TODO: 可以根据isSafe的return来优化
+func canBeSafeWithRemoval(levels []int) bool {
+	for i := 0; i < len(levels); i++ {
+		modifiedLevels := append([]int{}, levels[:i]...)
+		modifiedLevels = append(modifiedLevels, levels[i+1:]...)
+		if isSafe(modifiedLevels) {
+			return true
+		}
+	}
+	return false
+}
 
 func Day2(){
 	filepath := os.Getenv("PWD") + "/aoc2024/day2/input.txt"
@@ -14,52 +57,22 @@ func Day2(){
 	if err != nil {
 		log.Fatalf("Cannot open the file: %v", err)
 	}
-	safeCount := 0
+	fistSafeReports := 0
+	secondSafeReports := 0
 	for _, input := range inputs{
 		strs := strings.Split(input, " ")
 		reports, err := utils.ConvertStrsToInts(strs)
 		if err != nil {
 			log.Fatalf("Cannot convert the string to int: %v", err)
 		}
-		decreasing := false
-		if reports[0] > reports[1]{
-			decreasing = true
-		}
-		flag := 0
-		// for i := 0; i < len(reports) - 1; i++ {
-		// 	if decreasing && reports[i] < reports[i+1] {
-		// 		flag = true
-		// 		break
-		// 	} else if !decreasing && reports[i] > reports[i+1]{
-		// 		flag = true
-		// 	 	break
-		// 	}
-		// 	if math.Abs(float64(reports[i] - reports[i+1])) > 3 || math.Abs(float64(reports[i] - reports[i+1])) < 1{
-		// 		flag = true
-		// 		break
-		// 	}
-		// }
-		for i := 0; i < len(reports) - 1; i++ {
-			if decreasing && reports[i] < reports[i+1] {
-				flag ++
-				continue
-			} else if !decreasing && reports[i] > reports[i+1]{
-				flag++
-			 	continue
-			}
-			if math.Abs(float64(reports[i] - reports[i+1])) > 3 || math.Abs(float64(reports[i] - reports[i+1])) < 1 {
-				if (i + 2) == len(reports){
-					flag++
-					continue
-				} else if math.Abs(float64(reports[i] - reports[i+2])) <= 3 || math.Abs(float64(reports[i] - reports[i+2])) >= 1 {
-					flag++
-					continue
-				}
-			}
-		}
-		if flag <= 1 {
-			safeCount++
+		if isSafe(reports) {
+			fistSafeReports++
+		} else if canBeSafeWithRemoval(reports) {
+			secondSafeReports++
 		}
 	}
-	println(safeCount)
+	//part 1
+	println(fistSafeReports)
+	//part 2
+	println(fistSafeReports+secondSafeReports)
 }
