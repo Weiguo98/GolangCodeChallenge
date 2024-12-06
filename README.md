@@ -44,6 +44,8 @@ If you have any questions regarding a solution, feel more than free to email me 
 | Problem                                       | Solution                         |
 | --------------------------------------------- | -------------------------------- |
 | [Day 1](https://adventofcode.com/2024/day/1) | [Solution](aoc2024/day1/day1.go) |
+| [Day 2](https://adventofcode.com/2024/day/2) | [Solution](aoc2024/day2/day2.go) |
+| [Day 3](https://adventofcode.com/2024/day/3) | [Solution](aoc2024/day3/day3.go) |
 
 ## How to run
 
