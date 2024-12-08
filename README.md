@@ -1,8 +1,8 @@
-# Golang Kattis & AOC 2022, 2023
+# Golang Kattis & AOC 2022, 2023, 2024
 
 This repo contains solutions to all of the Kattis and AOC problems I have completed in Go.
 
-If you have any questions regarding a solution, feel more than free to email me at guow1227@gmail.com
+If you have any questions regarding a solution, feel more than free to contact me.
 
 ## Kattis
 
