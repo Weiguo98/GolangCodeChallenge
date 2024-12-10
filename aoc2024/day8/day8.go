@@ -1,9 +1,10 @@
-package day4
+package day8
 
 import (
 	utils "adventOfCode/aoc2024/utils"
 	"fmt"
 	"log"
+	"os"
 )
 
 func getLetterMap(inputs []string) map[string][]int {
@@ -63,8 +64,10 @@ func getAntinodes(letterMap map[string][]int, antiNodes [][]bool) [][]bool {
 	for _, v := range letterMap {
 		for i := 0; i < len(v); i += 2 {
 			for j := i + 2; j < len(v); j += 2 {
+				// part 1
+				// nodesPair := findAntinodesForOnePair(v[i], v[i+1], v[j], v[j+1])
+				// part 2
 				nodesPair := findAllAntinodesForOnePair(v[i], v[i+1], v[j], v[j+1], len(antiNodes), len(antiNodes[0]))
-				//fmt.Println(nodesPair)
 				antiNodes = setAntinodes(antiNodes, nodesPair)
 			}
 		}
@@ -73,21 +76,17 @@ func getAntinodes(letterMap map[string][]int, antiNodes [][]bool) [][]bool {
 }
 
 func Day() {
-	filepath := "C:/Users/GW199/GolangCodeChallenge/aoc2024/day8/input.txt"
+	filepath := os.Getenv("PWD") + "/aoc2024/day8/input.txt"
 	inputs, err := utils.InputReader(filepath)
 	if err != nil {
 		log.Fatalf("Cannot open the file: %v", err)
 	}
 	letterMap := getLetterMap(inputs)
-	// part1
 	antiNodes := getAntinodes(letterMap, getEmptyAntiNodes(inputs))
-	// part2
-	//fmt.Println(antiNodes)
 	nrOfAntinodes := 0
 	for i := 0; i < len(antiNodes); i++ {
 		for j := 0; j < len(antiNodes[0]); j++ {
 			if antiNodes[i][j] {
-				// fmt.Println(i, j)
 				nrOfAntinodes++
 			}
 		}
