@@ -48,6 +48,7 @@ If you have any questions regarding a solution, feel more than free to contact m
 | [Day 3](https://adventofcode.com/2024/day/3) | [Solution](aoc2024/day3/day3.go) |
 | [Day 8](https://adventofcode.com/2024/day/8) | [Solution](aoc2024/day8/day8.go) |
 | [Day 9](https://adventofcode.com/2024/day/9) | [Solution](aoc2024/day9/day9.go) |
+| [Day 25](https://adventofcode.com/2024/day/25) | [Solution](aoc2024/day25/day25.go) |
 
 ## How to run
 
