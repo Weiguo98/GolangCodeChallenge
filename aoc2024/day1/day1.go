@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strconv"
 	"strings"
-	utils "adventOfCode/aoc2024/utils"
+	utils "adventOfCode/utils"
 )
 
 func Day1() {

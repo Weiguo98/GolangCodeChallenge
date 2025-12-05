@@ -1,7 +1,7 @@
 package aoc2024
 
 import (
-	utils "adventOfCode/aoc2024/utils"
+	utils "adventOfCode/utils"
 	_"fmt"
 	"log"
 	"os"

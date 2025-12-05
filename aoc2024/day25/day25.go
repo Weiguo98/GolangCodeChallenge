@@ -1,7 +1,7 @@
 package day25
 
 import (
-	utils "adventOfCode/aoc2024/utils"
+	utils "adventOfCode/utils"
 	"fmt"
 	"log"
 	"os"
