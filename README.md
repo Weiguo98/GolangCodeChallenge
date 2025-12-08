@@ -50,6 +50,12 @@ If you have any questions regarding a solution, feel more than free to contact m
 | [Day 9](https://adventofcode.com/2024/day/9) | [Solution](aoc2024/day9/day9.go) |
 | [Day 25](https://adventofcode.com/2024/day/25) | [Solution](aoc2024/day25/day25.go) |
 
+### Advent of Code 2025
+
+| Problem                                       | Solution                         |
+| --------------------------------------------- | -------------------------------- |
+| [Day 1](https://adventofcode.com/2025/day/1) | [Solution](aoc2025/day1.go) |
+
 ## How to run
 
 Stay in the root directory, import the day in the `main.go` you would like to test, then run with `go run main.go`.
