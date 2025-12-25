@@ -3,9 +3,9 @@ package aoc2025
 import (
 	utils "adventOfCode/utils"
 	"log"
+	"math"
 	"os"
 	"strconv"
-	"math"
 )
 
 // part1
@@ -13,10 +13,10 @@ func countLeft(start, num int) int {
 	if start >= num {
 		return start - num
 	}
-	if (num - start)% 100 == 0 {
+	if (num-start)%100 == 0 {
 		return 0
 	}
-	return 100 - (num - start) % 100
+	return 100 - (num-start)%100
 }
 
 func countRight(start, num int) int {
@@ -29,15 +29,15 @@ func countRight(start, num int) int {
 // part2
 func countLeft2(start, num int) (int, int) {
 	if start == 0 {
-		return (num - start) / 100, 100 - (num - start) % 100
+		return (num - start) / 100, 100 - (num-start)%100
 	}
 	if start > num {
 		return 0, start - num
 	}
-	if (num - start)% 100 == 0 {
-		return (num - start) / 100 + 1, 0
+	if (num-start)%100 == 0 {
+		return (num-start)/100 + 1, 0
 	}
-	return (num - start) / 100 + 1, 100 - (num - start) % 100
+	return (num-start)/100 + 1, 100 - (num-start)%100
 }
 
 func countRight2(start, num int) (int, int) {
